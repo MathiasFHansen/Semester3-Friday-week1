@@ -69,5 +69,13 @@ public class MainTest {
         assertEquals(expected, actual);
     }
     
+    @Test
+    public void editOwnDetailsTest() throws SQLException, ClassNotFoundException{
+        String expected = "Petersen";
+        String actual = Main.editDetails("lname", "Thomsen", 1);
+        assertEquals(expected,actual);
+        
+    }
+    
     
 }
